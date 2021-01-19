@@ -1,5 +1,5 @@
 from PIL import Image,ImageDraw, ImageFont                                 
-img = Image.open("dog.jpg")                                                 #open it
+img = Image.open("pic.jpg")                                                 #open it
 img.show()                                                                  #show the image
 img.save("original.jpeg")                                                   #name the image
 Pixels = list(map(lambda x: int((x[0] + x[1] + x[2])/3), list(img.getdata()))) #average the Red,Green,Blue Value
